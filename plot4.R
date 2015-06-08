@@ -26,5 +26,5 @@ legend("topright",pch="___",bty="n",col=c("black","blue","red"),legend=c("Sub_me
 
 with(consump1,plot(Datetime,Global_reactive_power,type="l",xlab="datetime"))
 
-dev.copy(png,file="plot4.png")
+dev.copy(png,file="plot4.png",width=600,height=600) #480x480 pixels not displaying legends in graph 3 properly
 dev.off()
