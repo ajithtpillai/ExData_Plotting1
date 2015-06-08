@@ -11,7 +11,9 @@ consump1$Global_intensity=as.numeric(consump1$Global_intensity)
 consump1$Sub_metering_1=as.numeric(consump1$Sub_metering_1)
 consump1$Sub_metering_2=as.numeric(consump1$Sub_metering_2)
 consump1$Sub_metering_3=as.numeric(consump1$Sub_metering_3)
+
 par(mfrow=c(1,1),mar=c(4,4,2,1))
 hist(consump1$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
-dev.copy(png,file="plot1.png")
+
+dev.copy(png,file="plot1.png",width=480,height=480)
 dev.off()
